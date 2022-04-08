@@ -120,6 +120,10 @@ export default {
           value: 'Sell', 
           to: '/sell'
           },
+          {
+            value:'Dashbord',
+            to: '/buy'
+          },
         {
           value: 'About',
            to: '/about'
