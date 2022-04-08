@@ -114,7 +114,7 @@ export default {
       navbar: [
         {
           value: 'Home', 
-          to: 'https://nuxtjs.org/docs/features/nuxt-components#the-nuxtlink-component'
+          to: '/'
           },
           {
           value: 'Sell', 
@@ -124,10 +124,7 @@ export default {
           value: 'About',
            to: '/about'
            },
-        {
-          value: 'Contact',
-           to: '/contact'
-           },
+        
         {
           value: 'SignIn/SignOut', 
           to: '/login'
