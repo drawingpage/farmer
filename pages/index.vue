@@ -46,6 +46,7 @@
       </v-card-text>
       <v-card-actions>
         <v-btn
+          :to="card.to"
           class="shopBtn"
           text
         >
@@ -92,6 +93,7 @@ margin-top: 20px;
   height: 100vh;
   background-color: #e5e5e5;
   padding: auto;
+  position: fixed;
 }
 .logo{
   margin: 10px;
@@ -99,6 +101,7 @@ margin-top: 20px;
 .rightCon{
   height: 100vh;
   background-color: white;
+  padding-left: 100px;
 }
 </style>
 <script>
@@ -113,6 +116,10 @@ export default {
           value: 'Home', 
           to: 'https://nuxtjs.org/docs/features/nuxt-components#the-nuxtlink-component'
           },
+          {
+          value: 'Sell', 
+          to: '/sell'
+          },
         {
           value: 'About',
            to: '/about'
@@ -123,7 +130,7 @@ export default {
            },
         {
           value: 'SignIn/SignOut', 
-          to: '/contact'
+          to: '/login'
           },
       ],
       cards: [
@@ -132,36 +139,42 @@ export default {
             name:"Carrot",
             place:"Malappuram ",
             price:"200",
+            to:'/shop',
           },
           {
             src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
             name:"Tomato",
             place:"Kozhikode",
             price:"200",
+            to:'/shop',
           },
           {
             src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
             name:"Beans",
             place:"Thrissur",
             price:"200",
+            to:'/shop',
           },
           {
             src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
             name:"Chilli",
             place:"Kannur",
             price:"200",
+            to:'/shop',
           },
           {
             src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
             name:"Bitroot",
             place:"Wayanad",
             price:"200",
+            to:'/shop',
           },
           {
             src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
             name:"Potato",
             place:"Kozhikode",
             price:"200",
+            to:'/shop',
           },
         ],
         dialog: false,
